@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+/* Dark */
+
+body.dark {
+    background: #000;
+}
+
+body.dark .card {
+    background: #fff;
+    color: #000;
+}
+
+body.dark .contact {
+    background: #f5f5f5;
+    color: #000;
+}
+
+/* Light */
+/* Top Bar */
+
+.top-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn {
+    border: 1px solid #777;
+    background: transparent;
+
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+/* Dark Mode */
+body.dark .icon-btn {
+    color: #fff;
+    border-color: #777;
+}
+
+/* Light Mode */
+body.light .icon-btn {
+    color: #000;
+    border-color: #777;
+}
+
+body.light {
+    background: #f3f3f3;
+}
+
+body.light .card {
+    background: #000;
+    color: #fff;
+}
+
+body.light .contact {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* Top Bar */
+
+.top-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn {
+    border: 1px solid #777;
+    background: transparent;
+    color: inherit;
+
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 15px;
+}
+
+/* Card */
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 360px;
+
+    border-radius: 22px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+/* Photo */
+
+.photo img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #000;
+}
+
+/* Name */
+
+h1 {
+    margin-top: 18px;
+    font-size: 28px;
+}
+
+/* Job */
+
+#job {
+    margin-top: 6px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Divider */
+
+.divider {
+    width: 90px;
+    height: 3px;
+
+    background: #000;
+
+    margin: 20px auto 25px;
+
+    border-radius: 20px;
+}
+
+/* Bio */
+
+#bio {
+    font-size: 15px;
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+/* Contacts */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact {
+    text-decoration: none;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.contact:hover {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.contact i {
+    font-size: 19px;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .top-bar {
+        top: 12px;
+        right: 12px;
+    }
+
+    .icon-btn span {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
